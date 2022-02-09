@@ -112,7 +112,8 @@
 }
 
 .form__label,
-.form__textarea-label {
+.form__textarea-label,
+.form__text {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -197,7 +198,7 @@
 //   border-color: var(--accent-color);
 // }
 
-.checkbox {
+.backdrop__checkbox {
   margin-bottom: 30px;
 }
 

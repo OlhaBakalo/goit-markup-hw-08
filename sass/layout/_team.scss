@@ -62,8 +62,10 @@
   justify-content: center;
 }
 
-.team__icon:not(:last-child) {
-  margin-right: 10px;
+.team__icon {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team__link {

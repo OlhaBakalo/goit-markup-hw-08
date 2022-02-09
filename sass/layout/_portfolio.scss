@@ -4,8 +4,10 @@
   margin-bottom: 50px;
 }
 
-.btn__item:not(:last-child) {
-  margin-right: 8px;
+.btn__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .btn__text {

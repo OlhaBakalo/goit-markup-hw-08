@@ -56,8 +56,10 @@
 //   color: var(--accent-text-color);
 // }
 
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__subtitle {
@@ -73,13 +75,16 @@
   color: var(--second-text-color);
 }
 
-.footer__icon:not(:last-child) {
-  margin-right: 10px;
+.footer__icon {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer__list {
   display: flex;
 }
+
 .footer__link {
   display: flex;
   justify-content: center;
