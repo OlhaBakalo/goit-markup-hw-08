@@ -1,0 +1,27 @@
+:root {
+  /* ---------------Accent color--------------- */
+  --accent-color: #2196f3;
+  --accent-highlights-color: #188ce8;
+
+  /* -------------Background color------------- */
+  --basic-background-color: #ffffff;
+  --hero-footer-background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+
+  /* -----------------Text color--------------- */
+  --logo-text-color: #000000;
+  --header-text-color: #212121;
+  --primary-text-color: #757575;
+  --second-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --btn-text-color: #212121;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+
+  /* ----------------Stroke color-------------- */
+  --header-stroke-color: #ececec;
+  --stroke-color-link: #eeeeee;
+
+  /* ----------------Animstion----------------- */
+  --transition-duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
