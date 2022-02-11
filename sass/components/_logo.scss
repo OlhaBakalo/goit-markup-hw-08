@@ -10,4 +10,7 @@
   &__text--accent {
     color: var(--accent-text-color);
   }
+  @include desk {
+    @include font(null, 26px, 1.19, null);
+  }
 }

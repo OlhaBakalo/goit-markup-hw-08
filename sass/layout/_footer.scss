@@ -1,10 +1,6 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  // @include tab {
-  //   padding-left: 76px;
-  //   padding-right: 83px;
-  // }
 
   background-color: var(--hero-footer-background-color);
 }
@@ -20,12 +16,21 @@
     align-items: baseline;
     flex-wrap: wrap;
   }
+  @include desk {
+    @include centrFlex();
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
 }
 
 .footer__contact {
   margin-bottom: 60px;
   @include tab {
     margin: 0 165px 0 0;
+  }
+  @include desk {
+    margin: 0;
   }
 }
 
@@ -80,6 +85,11 @@
   &:not(:last-child) {
     // margin-bottom: 9px;
     margin-bottom: 8px;
+  }
+  @include desk {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -147,10 +157,22 @@
 
 /* ---FOOTER FORM----- */
 
+.footer__subscription {
+  @include tab {
+    margin-top: 60px;
+  }
+  @include desk {
+    margin-top: 0;
+  }
+}
+
 .footer__form {
   // display: flex;
-  // flex-direction: column;
   // align-items: center;
+  @include desk {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__input {
@@ -160,7 +182,7 @@
   width: 100%;
   height: 50px;
   padding: 0 16px;
-  margin-right: 12px;
+  // margin-right: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -183,7 +205,12 @@
     color: rgba(255, 255, 255, 0.6);
   }
   @include tab {
-    width: initial;
+    width: 450px;
+  }
+  @include desk {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
