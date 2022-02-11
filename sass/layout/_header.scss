@@ -1,10 +1,7 @@
-.header {
-  border-bottom: 1px solid var(--header-stroke-color);
-}
-
 .header__container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--header-stroke-color);
 }
 
 .nav {
@@ -38,6 +35,10 @@
   &:focus {
     color: var(--accent-text-color);
   }
+}
+
+.nav__link--current {
+  color: var(--accent-text-color);
 }
 
 // .nav__link:hover,
