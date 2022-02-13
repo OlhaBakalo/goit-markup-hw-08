@@ -24,7 +24,7 @@
 
 .modal {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
 
   padding: 40px;
@@ -35,11 +35,12 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transform: translate(-50%);
+  transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
   transition: transform var(--transition-duration) var(--timing-function),
     opacity var(--transition-duration) var(--timing-function);
+
   @include tel {
     width: 450px;
     min-height: 609px;
@@ -48,8 +49,6 @@
     top: 50%;
     width: 528px;
     min-height: 581px;
-
-    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -224,6 +223,7 @@
 
   @include desk {
     @include font(null, 14px, 1.71, null);
+    margin-left: 12px;
   }
 }
 

@@ -49,11 +49,15 @@
 
 .team__info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
   text-align: center;
   background-color: var(--basic-background-color);
   border-radius: 0px 0px 4px 4px;
+
+  @include desk {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name {
