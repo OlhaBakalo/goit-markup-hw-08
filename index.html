@@ -18,6 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -151,7 +155,9 @@
       <section class="hero section">
         <div class="hero__container">
           <div class="container">
-            <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+            <h1 class="hero__title animate__animated animate__rubberBand">
+              Эффективные решения<br />для вашего бизнеса
+            </h1>
             <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
           </div>
         </div>
@@ -927,12 +933,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;<a
-                href="#"
-                class="checkbox__link link"
-                target="_blank"
-                >Условия договора</a
-              >
+              <span class="checkbox__label-text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="checkbox__link link" target="_blank">Условия договора</a>
+              </span>
             </label>
           </div>
 
